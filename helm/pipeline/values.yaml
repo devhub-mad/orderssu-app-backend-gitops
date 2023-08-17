@@ -1,0 +1,15 @@
+app:
+  name: orderssu-app
+  namespace: devhub
+  cluster: .apps.cluster-wdl5h.wdl5h.sandbox2975.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-mad/orderssu-app-backend
+  org: devhub-mad
+  name: orderssu-app-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: orderssu-app-backend
+  tag: latest
